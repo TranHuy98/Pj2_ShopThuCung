@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./login.css">
+    <title>Signup</title>
+</head>
+<body>
+    <section class="login-banner">
+
+    </section>
+    <section class="login-content">
+        <h2 class="login-title">Sign up</h2>
+        <h3 class="signup-recommend">Do you have an account? <a href="#" id="login-page">Login Here</a></h3>
+
+        <div class="enter-name">
+            <div class="first-name">
+                <p class="info">First Name</p>
+                <input type="text" id="first-name" placeholder="First Name">
+            </div>
+            <div class="last-name">
+                <p class="info">Last Name</p>
+                <input type="text" id="last-name" placeholder="Last Name">
+            </div>
+        </div>
+        <p class="info">Enter Your Email *</p>
+        <div class="email-field">
+            <input type="email" id="email" placeholder="Enter Your Email">
+        </div>
+        <p class="info">Password *</p>
+        <div class="toggle-password-type">
+            <input type="password" id="password" placeholder="Create A Password">
+            <span id="toggle-password-button"><i class="fa-regular fa-eye-slash"></i></span>
+        </div>
+
+        <p class="info">Confirm Password *</p>
+
+        <div class="toggle-password-type">
+            <input type="password" id="confirm-password" placeholder="Confirm Password">
+            <span id="toggle-password-button"><i class="fa-regular fa-eye-slash"></i></span>
+        </div>
+
+        <div class="login-alert" id="login-alert">
+            Vui lòng nhập đầy đủ thông tin
+        </div>
+
+        <div class="login-function">
+            <div class="login-agreement">
+                <input type="checkbox" id="policy-check"> I agree to the Terms & Policy
+            </div>
+            <!-- <div class="restore-account"><u>Fotgot Password?</u></div> -->
+        </div>
+
+        <button class="check-login" id="check-signup">Sign Up</button>
+
+        <!-- <div class="signup-option">
+            <p>OR SIGNUP WITH</p>
+            <div class="options">
+                <button class="google-signup"><i class="fa-brands fa-google"></i> SIGNUP WITH GOOGLE</button>
+                <button class="facebook-signup"><i class="fa-brands fa-facebook"></i> SIGNUP WITH FACEBOOK</button>
+            </div>
+        </div> -->
+
+        <p class="signup-agreement">
+            By clicking the "signup" button, you create a Cobiro account, and you agree to Cobiro's <a href="#">Terms & Conditions</a> & <a href="#">Privacy Policy</a>.
+        </p>
+    </section>
+</body>
+<!-- <script src="./login.js"></script> -->
+<script src="./signup.js"></script>
+</html>

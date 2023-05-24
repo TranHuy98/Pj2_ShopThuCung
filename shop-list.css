@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+.shop-list-content{
+    background: #FBFBFB;
+    padding: 0 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+aside.criterias{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+div.price-range .range{
+    width: 100%;
+    height: 5px;
+    background: #F96736;
+    border-radius: 2px;
+    margin: 0 0 20px;
+}
+div.number-range{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+div.number-range button{
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    width: 60px;
+    height: 25px;
+    font-size: 18px;
+}
+div.criterias-item{
+    background: #FFF;
+}
+div.criterias-item h3.title{
+    font-size: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+div.criterias-item .check-list{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+div.check-list-item{
+    line-height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+div.check-list-item input{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+}
+
+
+div.main-product{
+    width: 83%;
+}
+
+div.main-product{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+div.sort-bar{
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+h2.title{
+    font-size: 24px;
+}
+div.sort-type{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+div.sort-button{
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #FBFBFB;
+    transition: 0.3s;
+}
+div.sort-button:hover{
+    cursor: pointer;
+    border: 1px solid #ccc;
+    color: #231f20;
+    font-weight: bold;
+}
+div.product-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+div.product-item{
+    width: 250px;
+    padding: 15px;
+    border: 1px solid #EEE;
+    border-radius: 10px;
+    position: relative;
+    background-color: #FBFBFB;
+    text-align: center;
+}
+div.tag{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 15px;
+    background: aqua;
+    border-radius: 10px 0;
+    font-size: 14px;
+    z-index: 1;
+}
+div.product-image{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+div.detail{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+div.detail button{
+    font-size: 24px;
+    background: #233E4E;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    color: #FFF;
+    border: none;
+    font-weight: bold;
+    line-height: 30px;
+}
+div.detail-link{
+    display: none;
+}
+div.product-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+div.product-image:hover img{
+    transform: scale(1.25);
+    cursor: pointer;
+}
+div.product-name{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
+    color: #FF4E23;
+}
+div.product-price{
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+span.new-price{
+    font-size: 22px;
+    color: #F96737;
+    font-weight: bold;
+}
+span.old-price{
+    font-size: 16px;
+    color: #ABABAB;
+    text-decoration: line-through;
+}
+div.rating{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+div.star{
+    font-size: 16px;
+    color: #FFBF35;
+    letter-spacing: 1px;
+}
+
+div.page-change{
+    padding: 20px;
+    border: 1px solid #EEE;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+div.page-change span{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    font-weight: bold;
+    transition: 0.3s;
+}
+div.page-change span:hover{
+    color: #FFF;
+    background-color: #FF7442;
+    cursor: pointer;
+}

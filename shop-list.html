@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./shop-list.css" />
+    <title>Shop List</title>
+  </head>
+  <body>
+    <div class="shop-list-content">
+      <aside class="criterias">
+        <div class="criterias-item price-range">
+          <h3 class="title">Price Range</h3>
+
+          <div class="range"></div>
+
+          <div class="number-range">
+            <button class="min-price">0</button>
+            <button class="max-price">500</button>
+          </div>
+        </div>
+        <div class="criterias-item">
+          <h3 class="title">Category</h3>
+          <div class="check-list">
+            <div class="check-list-item">
+              <input type="checkbox" /> <span>Food Toppers</span>
+              <div class="checkbox-custom"></div>
+            </div>
+            <div class="check-list-item">
+              <input type="checkbox" /> <span>Milk Replacer</span>
+              <div class="checkbox-custom"></div>
+            </div>
+            <div class="check-list-item">
+              <input type="checkbox" /> <span>Cannel Food</span>
+              <div class="checkbox-custom"></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <div class="main-product">
+        <div class="sort-bar">
+          <h2 class="title">Shop</h2>
+
+          <div class="sort-type">
+            <div class="quantity sort-button">
+              Show
+              <!-- <div class="quantity-drop-down">
+                            12
+                        </div> -->
+            </div>
+
+            <div class="types sort-button">Price</div>
+          </div>
+        </div>
+
+        <div class="product-list" id="product-list">
+          <div class="product-item">
+            <div class="tag">Offer</div>
+
+            <div class="product-image">
+              <img src="./assets/shop-list/1.jpg" alt="product image" />
+              <div class="detail">
+                <button>+</button>
+                <div class="detail-link">View detail</div>
+              </div>
+            </div>
+            <div class="product-name" id="product-name">San pham 1</div>
+            <div class="product-price">
+              <span class="new-price">$25.00</span>
+              <span class="old-price">$30.00</span>
+            </div>
+
+            <div class="rating">
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="number">(50)</div>
+            </div>
+          </div>
+
+        
+        </div>
+
+        <div class="page-change">
+          <span><i class="fa-solid fa-arrow-left"></i></span>
+          <span>01</span>
+          <span>02</span>
+          <span>03</span>
+          <span><i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./shop-list.js"></script>
+</html>
