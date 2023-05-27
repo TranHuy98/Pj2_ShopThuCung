@@ -186,6 +186,9 @@ div.product-name{
     margin: 10px 0 0;
     color: #FF4E23;
 }
+div.product-name:hover{
+    cursor: pointer;
+}
 div.product-price{
     margin: 15px 0;
     display: flex;

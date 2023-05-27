@@ -131,7 +131,7 @@ function showPassword() {
         if(isLoginSuccess){
             alert(`Dang nhap thanh cong`);
             isLoginSuccess = false;
-            window.location.href = "shop-list.html";
+            window.location.href = "index.html";
         }
         else{
             alert(`Thong tin tai khoan khong chinh xac`);
