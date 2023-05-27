@@ -31,39 +31,54 @@ const productList = [
 ];
 
 const containerProduct = document.getElementById("product-list");
-let stringHTML = "";
 
-for(let product of productList){
-    // console.log(product)
-    stringHTML += `
-    <div class="product-item">
-            <div class="tag">Offer</div>
+const renderProducts = (productList) => {
+  let stringHTML = "";
 
-            <div class="product-image">
-              <img src="./assets/shop-list/1.jpg" alt="product image" />
-              <div class="detail">
-                <button>+</button>
-                <div class="detail-link">View detail</div>
+  for(let product of productList){
+      // console.log(product)
+      stringHTML += `
+      <div class="product-item">
+              <div class="tag">Offer</div>
+
+              <div class="product-image">
+                <img src="./assets/shop-list/1.jpg" alt="product image" />
+                <div class="detail">
+                  <button>+</button>
+                  <div class="detail-link">View detail</div>
+                </div>
+              </div>
+              <div class="product-name" id="product-name">${product.nameProduct}</div>
+              <div class="product-price">
+                <span class="new-price">$25.00</span>
+                <span class="old-price">$30.00</span>
+              </div>
+
+              <div class="rating">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="number">(50)</div>
               </div>
             </div>
-            <div class="product-name" id="product-name">${product.nameProduct}</div>
-            <div class="product-price">
-              <span class="new-price">$25.00</span>
-              <span class="old-price">$30.00</span>
-            </div>
+      `
+  }
 
-            <div class="rating">
-              <div class="star">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <div class="number">(50)</div>
-            </div>
-          </div>
-    `
+  containerProduct.innerHTML = stringHTML;
 }
 
-containerProduct.innerHTML = stringHTML;
+const params = new URLSearchParams(window.location.search);
+let page = params.get('page') ?? 1;
+
+const end = productList.length - 1 - (page-1)*4 + 1;
+const start = end - 4;
+console.log(start);
+console.log(end);
+
+const test = productList.slice(start, end).reverse()
+
+renderProducts(test)
