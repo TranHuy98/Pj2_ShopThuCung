@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+div.wrapper{
+    width: 100%;
+}
+
+section.contact-top-bar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 6%;
+    align-items: center;
+}
+section.contact-top-bar div.social{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+section.contact-top-bar div.phone{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+section.contact-top-bar div.opening-hour{
+    text-align: center;
+}
+section.contact-top-bar div.opening-hour span{
+    font-weight: bold;
+    font-size: 18px;
+    color: red;
+}
+
+/* menu */
+
+section.menu{
+    width: 100%;
+    background: #001E23;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+div.shop-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 22px;
+}
+div.shop-icon img{
+    height: 30px;
+    margin: 0 10px 0 0;
+}
+nav.main-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+div.main-menu-item{
+    padding: 15px 40px;
+    position: relative;
+    cursor: pointer;
+}
+div.main-menu-item:hover{
+    color: red;
+}
+div.main-menu-item:hover div.main-menu-dropdown{
+    display: block;
+    color: #FFF;
+}
+div.main-menu-dropdown{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #001E23;
+    color: #FFF;
+    top: 100%;
+    left: 0;
+    width: 150%;
+    display: none;
+}
+div.dropdown-subitem{
+    padding: 15px 20px;
+    width: 100%;
+    border-bottom: 1px solid #FFF;
+}
+
+
+/* user */
+div.menu-function{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+div.menu-function i{
+    font-size: 16px;
+    border: 2px solid #FFF;
+    line-height: 1;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* hero section */
+
+section.hero-section{
+    padding: 20px 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+div.hero-section-left{
+    border: 1px solid red;
+}
+div.hero-section-left h3{
+    font-size: 22px;
+    font-weight: light;
+}
+
+div.hero-section-left h2{
+    font-size: 40px;
+    margin: 30px 0;
+}
+
+div.hero-section-left h3 span{
+    font-size: 30px;
+    margin: 0 15px;
+    color: red;
+}
+
+div.shop-button{
+    text-align: center;
+}
+button#shop-now{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px 40px;
+    border: 1px solid #CCC;
+    background: orange;
+    color: #000;
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+
+div.hero-section-right{
+    border: 1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+/* hero section */
+
+
+
+
+
+
+/* page content */
+section.pages-content{
+    width: 100%;
+    height: 500px;
+}
+
+/* end page content */
+
+section.footer{
+    padding: 30px 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 20px;
+    border-top: 1px solid #CCC;
+    background: url(./assets/homepage/bg.png) no-repeat;
+    background-position:  0 0;
+    background-size: cover;
+}
+
+div.farewell{
+    text-align: center;
+    order: 1;
+}
+
+div.farewell h2{
+    color: red;
+    font-size: 30px;
+    margin: 0 0 20px;
+}
+div.farewell div.footer-book{
+    display: inline-block;
+    background: orange;
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-weight: bold;
+    color: #FFF;
+    cursor: pointer;
+}
+
+div.opening-hour-footer{
+    order: 2;
+}
+
+div.footer-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+div.footer-contact h3{
+    font-size: 30px;
+    color: red;
+}
+
+div.contact-item{
+    display: flex;
+    flex-direction: row;
+    justify-self: start;
+    align-items: center;
+    gap: 15px;
+}
+div.contact-item i{
+    font-size: 25px;
+}
+
+section.copyright{
+    font-size: 20px;
+    text-align: center;
+    padding: 15px 6%;
+    /* background: #FEF2E9; */
+    border-top: 1px solid #CCC;
+}
+
+section.copyright span{
+    color: red;
+    font-weight: bold;
+}

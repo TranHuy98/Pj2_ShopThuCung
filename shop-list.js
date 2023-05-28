@@ -29,23 +29,33 @@ export const productList = [
     {
         id: 5,
         nameProduct: "Sản phẩm 6",
-        img: "./assets/detail/shop-big-01.png",
+        img: "./assets/detail/h3-collection-12.png",
     },
     {
         id: 6,
         nameProduct: "Sản phẩm 7",
-        img: "./assets/detail/shop-big-03.png",
+        img: "./assets/detail/h3-collection-11.png",
     },
     {
         id: 7,
         nameProduct: "Sản phẩm 8",
-        img: "./assets/detail/shop-big-05.png",
+        img: "./assets/detail/h3-collection-09.png",
     },
     { 
         id: 8,
         nameProduct: "Sản phẩm 9",
-        img: "./assets/detail/shop-big-02.png",
-    }
+        img: "./assets/detail/h3-collection-03.png",
+    },
+    { 
+        id: 9,
+        nameProduct: "Sản phẩm 10",
+        img: "./assets/detail/h3-collection-05.png",
+    },
+    { 
+      id: 10,
+        nameProduct: "Sản phẩm 11",
+        img: "./assets/detail/h3-collection-11.png",
+    },
 ];
 
 
@@ -64,7 +74,7 @@ const renderProducts = (productList) => {
               <div class="tag">Offer</div>
 
               <div class="product-image">
-                <img src="./assets/shop-list/1.jpg" alt="product image" />
+                <img src="${product.img}" alt="product image" />
                 <div class="detail">
                   <button>+</button>
                   <div class="detail-link">View detail</div>
@@ -96,14 +106,26 @@ const renderProducts = (productList) => {
 const params = new URLSearchParams(window.location.search);
 let page = params.get('page') ?? 1;
 
-const end = productList.length - 1 - (page-1)*4 + 1;
+const end = productList.length - (page-1)*4;
 const start = end - 4;
-// console.log(start);
-// console.log(end);
+console.log("render test")
+console.log(productList.length);
+console.log(start);
+console.log(end);
 
-const test = productList.slice(start, end).reverse()
+let pagination = [];
 
-renderProducts(test);
+if(start<0){
+  pagination = productList.slice(0,end).reverse();
+}
+else{
+  pagination = productList.slice(start,end).reverse();
+};
+
+
+console.log(pagination);
+
+renderProducts(pagination);
 
 let productNameList = document.getElementsByClassName('product-name');
 
