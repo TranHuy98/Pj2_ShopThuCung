@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./index-test.css">
+    <link rel="stylesheet" href="./index.css">
     <title>Trang chu</title>
 </head>
 <body>
@@ -55,11 +55,12 @@
             <div class="menu-function">
                 <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
                 <div class="favorite"><i class="fa-solid fa-heart"></i></div>
-                <div class="user-icon">
-                    <i class="fa-solid fa-user"></i>
+                <div class="user-icon" id="user-icon">
+                    <!-- <i class="fa-solid fa-user"></i>
+                    <img src="./assets/homepage/1.png" alt=""> -->
                 </div>
-                <div class="user-name">
-                    Huy Tran
+                <div class="user-name" id="user-name">
+                    Login
                 </div>
             </div>
         </section>
@@ -87,7 +88,7 @@
         </section>
 
         <section class="head-video">
-            <video src="./assets/homepage/video-02.mp4" autoplay loop controls></video>
+            <video src="./assets/homepage/video-02.mp4" playsinline autoplay muted loop controls></video>
 
             <div class="pet-bg">
                 <img src="./assets/homepage/cat.png" alt="" class="pet-left">
@@ -177,5 +178,5 @@
         </section>
     </div>
 </body>
-<script src="./index-test.js"></script>
+<script src="./index.js"></script>
 </html>

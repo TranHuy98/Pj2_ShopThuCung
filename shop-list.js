@@ -1,6 +1,13 @@
 ///list tam thoi
+let productList;
 
-export const productList = [
+if (JSON.parse(localStorage.getItem('MangSanPham')) !== null){
+  	productList = JSON.parse(localStorage.getItem('MangSanPham'));
+};
+
+
+if (JSON.parse(localStorage.getItem('MangSanPham')) === null){
+   productList = [
     {
         id: 0,
         nameProduct: "Sản phẩm 1",
@@ -59,8 +66,13 @@ export const productList = [
 ];
 
 
-
 localStorage.setItem('MangSanPham', JSON.stringify(productList));
+
+}
+
+console.log(productList);
+
+// export productList;
 
 const containerProduct = document.getElementById("product-list");
 
