@@ -198,3 +198,6 @@ togglePassword.onclick =  function() {
   document.getElementById("signup-page").onclick = function(){
     window.location.href = "signup.html";
   };
+
+  document.getElementById('user-icon').innerHTML = `<i class="fa-solid fa-user"></i>`;
+    document.getElementById('user-name').innerHTML = `<a href="./login.html">Login</a>`;

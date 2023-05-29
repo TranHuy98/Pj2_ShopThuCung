@@ -6,9 +6,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background: #FBF9F5;
+}
 a{
     text-decoration: none;
+    max-width: 100%;
 }
 
 a:visited{
@@ -71,7 +74,7 @@ section.menu{
     align-items: center;
     position: sticky;
     top: -1px;
-    z-index: 1;
+    z-index: 3;
 }
 div.shop-icon{
     display: flex;
@@ -115,6 +118,7 @@ div.main-menu-dropdown{
     left: 0;
     width: 150%;
     display: none;
+    z-index: 3;
 }
 div.dropdown-subitem{
     padding: 15px 20px;
@@ -380,12 +384,33 @@ section.copyright span{
 
 /* <992 */
 @media all and (max-width: 992px){
-    section.contact-top-bar{
-        /* flex-direction: column; */
-    }
     nav.main-menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #001F23;
+        border-top: 1px solid #FFF;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 0;
+        gap: 0;
         display: none;
     }
+    .main-menu-item{
+        border: none;
+        border-bottom: 1px solid #FFF;
+        width: 100%;
+        text-align: left;
+    }
+    div.main-menu-dropdown{
+        position: absolute;
+        top: 30%;
+        background: #001F23;
+        left: 100%;
+        width: 100%;
+    }
+
     section.menu{
         padding: 10px 6%;
     }
@@ -474,9 +499,10 @@ section.copyright span{
 
 @media all and (max-width: 425px){
     section.contact-top-bar{
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: flex-start;
         align-items: center;
+        gap: 10px;
     }
     div.opening-hour{
         order: 1;

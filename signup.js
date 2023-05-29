@@ -167,3 +167,7 @@ const validateEmail = (email) => {
 document.getElementById("login-page").onclick = function(){
     window.location.href = "login.html";
   };
+
+
+  document.getElementById('user-icon').innerHTML = `<i class="fa-solid fa-user"></i>`;
+    document.getElementById('user-name').innerHTML = `<a href="./login.html">Login</a>`;
