@@ -1,6 +1,7 @@
 let userImage;
 let userName;
 
+
 if (localStorage.getItem('userLogin') !== null){
     userImage = localStorage.getItem('userLogin');
     userName = localStorage.getItem('userName');
@@ -12,5 +13,5 @@ if (localStorage.getItem('userLogin') !== null){
 
 if (localStorage.getItem('userLogin') === null){
     document.getElementById('user-icon').innerHTML = `<i class="fa-solid fa-user"></i>`;
-    document.getElementById('user-name').innerHTML = `Login`;
+    document.getElementById('user-name').innerHTML = `<a href="./login.html">Login</a>`;
 }

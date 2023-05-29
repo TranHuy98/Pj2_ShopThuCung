@@ -54,6 +54,10 @@ section.contact-top-bar div.opening-hour span{
 
 /* menu */
 
+button#mobi-menu{
+    display: none;
+}
+
 section.menu{
     width: 100%;
     background: #001E23;
@@ -66,7 +70,7 @@ section.menu{
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    top: 0;
+    top: -1px;
     z-index: 1;
 }
 div.shop-icon{
@@ -77,7 +81,7 @@ div.shop-icon{
     font-size: 22px;
 }
 div.shop-icon img{
-    height: 30px;
+    width: 114px;
     margin: 0 10px 0 0;
 }
 nav.main-menu{
@@ -304,9 +308,10 @@ section.footer{
     align-items: flex-start;
     font-size: 20px;
     border-top: 1px solid #CCC;
-    background: url(./assets/homepage/bg.png) no-repeat;
-    background-position:  0 0;
+    background: url("./assets/homepage/Cute-Cats-and-Dogs-Wallpapers-1024x576.jpg") no-repeat;
+    background-position:  center center;
     background-size: cover;
+    color: #FFF;
 }
 
 div.farewell{
@@ -370,4 +375,119 @@ section.copyright span{
     color: red;
     font-weight: bold;
     font-size: 24px;
+}
+
+
+/* <992 */
+@media all and (max-width: 992px){
+    section.contact-top-bar{
+        /* flex-direction: column; */
+    }
+    nav.main-menu{
+        display: none;
+    }
+    section.menu{
+        padding: 10px 6%;
+    }
+    section.hero-section{
+        flex-direction: column;
+        text-align: center;
+    }
+    button#mobi-menu{
+        display: block;
+        font-size: 16px;
+        background: #001F23;
+        border: 2px solid #FFF;
+        color: #FFF;
+        line-height: 1;
+        padding: 10px;
+    }
+}
+
+@media all and (max-width:768px){
+    section.story{
+        flex-direction: column;
+    }
+    div.story-left, div.story-right{
+        width: 100%;
+        padding: 0 !important;
+    }
+    div.story-right{
+        text-align: center;
+        margin: 0 0 20px;
+    }
+    div.story-right img{
+        display: inline-block;
+        max-width: 80%;
+    }
+    section#story div.story-left{
+        order: 1;
+    }
+    section.footer{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+    }
+    div.farewell, div.footer-contact{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+    }
+    div.contact-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+    }
+    div.farewell{
+        order: 0;
+    }
+}
+
+@media all and (max-width: 576px){
+    img.pet-left, img.pet-right{
+        position: static;
+        width: 85px;
+        height: auto;
+        transform: none;
+    }
+    section.head-video{
+        padding: 20px 4%;
+    }
+    video{
+        width: 100%;
+    }
+    div.pet-bg{
+        margin: 10px 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media all and (max-width: 425px){
+    section.contact-top-bar{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    div.opening-hour{
+        order: 1;
+    }
+    div.search, div.favorite{
+        display: none;
+    }
+    section.menu{
+        padding: 10px 3%;
+    }
+    div.shop-icon img{
+        width: 100px;
+    }
 }

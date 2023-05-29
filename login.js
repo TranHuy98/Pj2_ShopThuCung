@@ -125,13 +125,12 @@ localStorage.setItem('MangNguoiDung', JSON.stringify(users));
 //show-hide Password
 
 
-let emailInput = document.getElementById("email");
-let passwordInput = document.getElementById("password");
-let togglePassword = document.getElementById("toggle-password-button");
+let togglePassword = document.getElementById('toggle-password-button');
 
-togglePassword.addEventListener("click",showPassword);
+togglePassword.onclick =  function() {   
 
-function showPassword() {
+  
+  let passwordInput = document.getElementById("password");
     if (passwordInput.type === "password") {
         passwordInput.type = "text";
         togglePassword.innerHTML = `<i class="fa-regular fa-eye"></i>`;
@@ -139,7 +138,7 @@ function showPassword() {
         passwordInput.type = "password";
         togglePassword.innerHTML = `<i class="fa-regular fa-eye-slash"></i>`;
     }
-  }
+  };
 
 
 //check policy
