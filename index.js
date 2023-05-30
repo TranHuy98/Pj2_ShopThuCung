@@ -7,7 +7,13 @@ if (localStorage.getItem('userLogin') !== null){
     userName = localStorage.getItem('userName');
     console.log(userImage);
     console.log(userName);
-    document.getElementById('user-icon').innerHTML = `<img src="${userImage}" alt="">`;
+    if(userImage === 'undefined'){
+        document.getElementById('user-icon').innerHTML = `<i class="fa-solid fa-user"></i>`;
+    }
+    else{
+        document.getElementById('user-icon').innerHTML = `<img src="${userImage}" alt="">`;
+    };
+    
     document.getElementById('user-name').innerHTML = `${userName}`;
 }
 
