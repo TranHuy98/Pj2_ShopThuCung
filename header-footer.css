@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #FBF9F5;
+}
+a{
+    text-decoration: none;
+    max-width: 100%;
+    color: inherit;
+}
+
+a:visited{
+    color: inherit;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+div.wrapper{
+    width: 100%;
+    background: #FBF9F5;
+}
+
+section.contact-top-bar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 6%;
+    align-items: center;
+}
+section.contact-top-bar div.social{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+section.contact-top-bar div.phone{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+section.contact-top-bar div.opening-hour{
+    text-align: center;
+}
+section.contact-top-bar div.opening-hour span{
+    font-weight: bold;
+    font-size: 18px;
+    color: red;
+}
+
+/* menu */
+
+button#mobi-menu{
+    display: none;
+}
+
+section.menu{
+    width: 100%;
+    background: #001E23;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 3%;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: -1px;
+    z-index: 3;
+}
+div.shop-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 22px;
+}
+div.shop-icon img{
+    width: 114px;
+    margin: 0 10px 0 0;
+}
+nav.main-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+div.main-menu-item{
+    padding: 15px 40px;
+    position: relative;
+    cursor: pointer;
+}
+div.main-menu-item:hover{
+    color: red;
+}
+div.main-menu-item:hover div.main-menu-dropdown{
+    display: block;
+    color: #FFF;
+}
+div.main-menu-dropdown{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #001E23;
+    color: #FFF;
+    top: 100%;
+    left: 0;
+    width: 150%;
+    display: none;
+    z-index: 3;
+}
+div.dropdown-subitem{
+    padding: 15px 20px;
+    width: 100%;
+    border-bottom: 1px solid #FFF;
+}
+
+div.dropdown-subitem:hover{
+    color: red;
+}
+
+
+/* user */
+div.menu-function{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+div.menu-function i{
+    font-size: 16px;
+    border: 2px solid #FFF;
+    line-height: 1;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+div.menu-function img{
+    width: 39px;
+    height: 39px;
+    border: 2px solid #FFF;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+section.footer{
+    padding: 30px 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 20px;
+    border-top: 1px solid #CCC;
+    background: url("./assets/homepage/Cute-Cats-and-Dogs-Wallpapers-1024x576.jpg") no-repeat;
+    background-position:  center center;
+    background-size: cover;
+    color: #FFF;
+}
+
+div.farewell{
+    text-align: center;
+    order: 1;
+}
+
+div.farewell h2{
+    color: red;
+    font-size: 30px;
+    margin: 0 0 20px;
+}
+div.farewell div.footer-book{
+    display: inline-block;
+    background: orange;
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-weight: bold;
+    color: #FFF;
+    cursor: pointer;
+}
+
+div.opening-hour-footer{
+    order: 2;
+}
+
+div.footer-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+div.footer-contact h3{
+    font-size: 30px;
+    color: red;
+}
+
+div.contact-item{
+    display: flex;
+    flex-direction: row;
+    justify-self: start;
+    align-items: center;
+    gap: 15px;
+}
+div.contact-item i{
+    font-size: 25px;
+}
+
+section.copyright{
+    font-size: 20px;
+    text-align: center;
+    padding: 15px 6%;
+    background: #001F23;
+    color: #FFF;
+    letter-spacing: 0.5px;
+}
+
+section.copyright span{
+    color: red;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+/* <992 */
+@media all and (max-width: 992px){
+    nav.main-menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #001F23;
+        border-top: 1px solid #FFF;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 0;
+        gap: 0;
+        display: none;
+    }
+    .main-menu-item{
+        border: none;
+        border-bottom: 1px solid #FFF;
+        width: 100%;
+        text-align: left;
+    }
+    div.main-menu-dropdown{
+        position: absolute;
+        top: 30%;
+        background: #001F23;
+        left: 100%;
+        width: 100%;
+    }
+
+    section.menu{
+        padding: 10px 6%;
+    }
+    section.hero-section{
+        flex-direction: column;
+        text-align: center;
+    }
+    button#mobi-menu{
+        display: block;
+        font-size: 16px;
+        background: #001F23;
+        border: 2px solid #FFF;
+        color: #FFF;
+        line-height: 1;
+        padding: 10px;
+    }
+}
+
+@media all and (max-width:768px){
+    section.story{
+        flex-direction: column;
+    }
+    div.story-left, div.story-right{
+        width: 100%;
+        padding: 0 !important;
+    }
+    div.story-right{
+        text-align: center;
+        margin: 0 0 20px;
+    }
+    div.story-right img{
+        display: inline-block;
+        max-width: 80%;
+    }
+    section#story div.story-left{
+        order: 1;
+    }
+    section.footer{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+    }
+    div.farewell, div.footer-contact{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+    }
+    div.contact-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+    }
+    div.farewell{
+        order: 0;
+    }
+}
+
+@media all and (max-width: 576px){
+    img.pet-left, img.pet-right{
+        position: static;
+        width: 85px;
+        height: auto;
+        transform: none;
+    }
+    section.head-video{
+        padding: 20px 4%;
+    }
+    video{
+        width: 100%;
+    }
+    div.pet-bg{
+        margin: 10px 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media all and (max-width: 425px){
+    section.contact-top-bar{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+    div.opening-hour{
+        order: 1;
+    }
+    div.search, div.favorite{
+        display: none;
+    }
+    section.menu{
+        padding: 10px 3%;
+    }
+    div.shop-icon img{
+        width: 100px;
+    }
+}
