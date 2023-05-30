@@ -36,27 +36,49 @@ let detailName = productList[imgID].nameProduct;
 document.getElementById('big-image').src = bigSrc;
 document.getElementById('detail-product-name').innerHTML = detailName;
 
-///choose amount to buy
+///choose amount to buy and calculate sum price
 
 let buyAmount = document.getElementById('buy-amount');
 let minus = document.getElementById('minus');
 let plus = document.getElementById('plus');
+let sumPrice = document.getElementById('sum-price');
+let newPrice = document.getElementById('new-price').innerHTML;
+let oldPrice = document.getElementById('old-price').innerHTML;
+
+console.log(newPrice);
 
 buyAmount.innerHTML = 1;
 let bNum = 1;
 plus.onclick = function(){
     bNum +=1;
     buyAmount.innerHTML = bNum;
+    sumPrice = bNum*newPrice;
+    document.getElementById('sum-price').innerHTML = sumPrice;
 }
 minus.onclick = function(){
     if (buyAmount.innerHTML == 1){
         bNum = 1;
         buyAmount.innerHTML = bNum;
+        sumPrice = bNum*newPrice;
+        document.getElementById('sum-price').innerHTML = sumPrice;
     }
     else{
         bNum-=1;
         buyAmount.innerHTML = bNum;
+        sumPrice = bNum*newPrice;
+        document.getElementById('sum-price').innerHTML = sumPrice;
     }
     
 }
 
+document.getElementById('add-to-cart').onclick = function (){
+
+    let userName = localStorage.getItem('userName');
+    console.log(userName);
+    if(userName === 'undefined' || userName === null){
+        alert('not ok');
+    }
+    else{
+        alert('ok');
+    }
+}

@@ -12,6 +12,7 @@ body{
 a{
     text-decoration: none;
     max-width: 100%;
+    color: inherit;
 }
 
 a:visited{
