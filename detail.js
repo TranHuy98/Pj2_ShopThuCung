@@ -82,3 +82,9 @@ document.getElementById('add-to-cart').onclick = function (){
         alert('ok');
     }
 }
+
+/// check favorite on layout
+
+document.getElementById('favorite-check').onclick = function(){
+    alert('ok');
+}

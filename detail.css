@@ -174,13 +174,14 @@ button.buy-button{
     text-align: center;
 }
 
-div.wishlist{
+div.favorite-check{
     display: flex;
     flex-direction: row;
     gap: 20px;
     font-weight: bold;
     font-size: 22px;
 }
+
 
 /* info */
 
